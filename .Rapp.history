@@ -1,0 +1,41 @@
+cd
+getwd()
+gamma(2)
+gamma(5)
+gamma(5.5)
+gamma(5.5)/(17*gamma(5))
+theta <- rgamma(1000,68,45)
+mean(theta)
+theta <- rgamma(10000,68,45)
+mean(abs(1.5111111111-theta)>0.95)
+s <- 1000
+for (i in 1:s) {
+theta <- rgamma(10000,68,45)
+m <- mean(theta)
+diff <- mean(abs(m-1.5111111111)>0.001)
+}
+> for (i in 1:s) {#
++ theta <- rgamma(10000,68,45)#
++ m <- mean(theta)#
++ diff <- mean(abs(m-1.5111111111)>0.001)#
++ }
+var <- c("hello")
+var <- c("hello", "bob", "boy")
+var
+getwd()
+setwd("/Users/CamSrini/Documents/GitHub/RLdata")
+library(devtools)
+library(roxygen2)
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
+document()
