@@ -1,10 +1,10 @@
 # weird encoding stuff, done in terminal
 # https://linux.die.net/man/1/enca
 # http://jeremykendall.net/2015/05/08/detecting-and-converting-file-encoding/
-# enconv -L belarusian cd_encode.csv -x UTF-8
+# enconv -L belarusian inst/extdata/cd.csv -x UTF-8
 
 # deal with \" by replacing with *
-tt <- readLines("../raw/cd/cd_encode.csv")
+tt <- readLines("inst/extdata/cd.csv")
 tt <- gsub('\\\\"',"\\1*",tt) # replace \" by *
 tt <- gsub("\\\\","\\", tt) # get rid of the double escape due to readLines
 
