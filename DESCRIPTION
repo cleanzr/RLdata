@@ -7,7 +7,7 @@ Authors@R: c(person("Srini", "Sunil", email= "srinivas.sunil@duke.edu", role=c("
 Description: This is a record linkage package with multiple data sets. There are three types of data sets: restaurants, cora, and cd. There restaurants data set contains information about different restaurants, with the Zagats portion containing 331 records and the Fodors portion containing 533 records. The following variables are included in the data set: id, name, address, city, phone, type. The CORA data set contains 1879 records with information on published papers. The following variables are included in the data set: id, title, book_title, authors, address, date, year, editor, journal, volume, pages, publisher, institution, type, tech, note. Lastly, the CD data set contains 9763 CDs randomly extracted from freeDB. The following variables are included in this data set: pk, id, artist, title, category, genre, cdextra, year, song_name, track_number. Each of the data sets described has a respective gold data set that provides information on which records match based on id. 
 URL: https://github.com/ses109/RLdata
 BugReports: https://github.com/ses109/RLdata/issues
-Depends: R (>= 3.4.0)
+Depends: R (>= 3.3.0)
 License: CC0
 Encoding: UTF-8
 LazyData: true
