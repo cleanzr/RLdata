@@ -4,13 +4,10 @@
 \name{cd}
 \alias{cd}
 \title{CD Data Set}
-\format{A data frame with 11 variables: \code{pk}, \code{id}, \code{artist}, 
-\code{title}, \code{category}, \code{genre}, \code{cdextra}, \code{year}, 
-\code{track_number}, \code{song_name} 
+\format{A data frame with 11 variables: \code{pk}, \code{id}, \code{artist}, \code{title}, \code{category}, \code{genre}, \code{cdextra}, \code{year}, \code{track_number}, \code{song_name} 
 
 This data set includes 9763 CDs randomly extracted from freeDB.
-It is appropriate for performing various types of record linkage
-and can be assessed by standard record linkage methods.}
+It is appropriate for performing various types of record linkage and can be assessed by standard record linkage methods.}
 \usage{
 cd
 }
