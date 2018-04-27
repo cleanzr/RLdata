@@ -36,11 +36,11 @@ information$unique_id <- unique_id #add unique id into data frame
 #head(information)
 #nrow(information)
 
-unnamed_tabs <- table(cora_gold$id1)
+unnamed_tabs <- table(cora_gold2$id1)
 #View(unnamed_tabs)
 
 ones_id <- c()
-name <- names(unnamed_tabs)
+name <- names(unnamed_tabs) ##corresponding id to the freq
 
 #get all the values that have freq of 1, 
 #this means there is a value after this that is a match, should have same id
@@ -56,6 +56,12 @@ ids_missing <- as.numeric(ones_id) + 1 #get that missing value with same id
 missing_total <- setdiff(cora_ids, information$matched_names) #get all the missing ids
 
 already_have_existing_ids <- intersect(missing_total, ids_missing) #get all the missing, but known ids
+
+#length(ids_missing)
+#length(already_have_existing_ids)
+###^^^THERE IS A DIFFERENCE IN LENGTH HERE, AND THAT SHOULDN'T HAPPEN.... WHY IS THIS.. might lead to error
+
+
 
 #get the unique id of the values that had freq of 1 and add it to the next value
 uniques <- c()
@@ -91,8 +97,6 @@ names(cora_gold_update) <- c("cora_id", "unique_id")
 #nrow(cora_gold_update)
 
 save(cora_gold_update, file="../data/cora_gold_update.RData")
-
-
 
 
 #remaining_cora_ids <- setdiff(cora_ids, set2_cora_ids)
