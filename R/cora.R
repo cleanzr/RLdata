@@ -27,3 +27,18 @@
 #'dim(cora_gold)
 #'
 "cora_gold"
+
+#' Cora Gold Update
+#'
+#' This data set includes the matched record pairs based on ID.
+#'
+#' @format A data frame with 2 variables: \code{cora_id}, \code{unique_id}
+#' 
+#' This data set includes the matched record pairs based on ID from the CORA data set.
+#' This data set can be used to evaluate the performance of record linkage methods performed on the CORA data set. 
+#'
+#'@examples
+#'head(cora_gold_update)
+#'dim(cora_gold_update)
+#'
+"cora_gold_update"

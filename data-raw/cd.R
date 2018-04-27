@@ -4,6 +4,7 @@
 # enconv -L belarusian inst/extdata/cd.csv -x UTF-8
 
 # deal with \" by replacing with *
+tt <- readLines("temp")
 tt <- readLines("inst/extdata/cd.csv")
 tt <- gsub('\\\\"',"\\1*",tt) # replace \" by *
 tt <- gsub("\\\\","\\", tt) # get rid of the double escape due to readLines
