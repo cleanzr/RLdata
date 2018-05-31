@@ -1,6 +1,6 @@
 .Rproj.user
 .Rhistory
-.RData
+*.RData
 RLdata.Rproj
-.DS_Store
+*.DS_Store
 .Rapp.history
